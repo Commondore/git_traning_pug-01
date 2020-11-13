@@ -1,0 +1,46 @@
+*, *:before, *:after
+	box-sizing: border-box
+
+html, body
+	margin: 0
+	padding: 0
+	height: 100%
+	width: 100%
+
+body
+	font: rem(15px)/1.3 $font_default
+
+.wrapper
+	position: relative
+	overflow: hidden
+	min-height: 100%
+
+.container
+	margin: 0 auto
+	max-width: $width_default
+	padding: $gutter
+
+
+%flex_center
+	display: flex
+	justify-content: center
+	align-items: center
+
+.title-sec
+	color: darken(#000, 5%)
+	font-size: rem(36px)
+
+	span
+		color: $second_color
+
+.overlay
+	position: relative
+
+	&:after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba($accent_color, .9)
