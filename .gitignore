@@ -6,6 +6,6 @@ css/
 *.psd
 
 package-lock.json
-
+html/
 **/*.html
 *.html

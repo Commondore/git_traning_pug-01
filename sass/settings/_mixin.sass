@@ -1,5 +1,7 @@
+@use "sass:math"
+
 @function rem($px)
-	@return $px / 16px + 0rem
+	@return math.div($px, 16px) + 0rem
 
 =phone
 	@media screen and (min-width: $phone)
